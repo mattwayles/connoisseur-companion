@@ -27,6 +27,18 @@ dependencies = [
     "mcp>=1.25.0",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4",
+    "pytest-asyncio>=0.23",
+    "pytest-cov>=4.0",
+]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["connoisseur*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "--tb=short"
