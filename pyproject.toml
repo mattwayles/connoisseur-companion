@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "connoisseur-companion"
+version = "1.0.0"
+description = "AI-powered multimodal restaurant recommendation system"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.84.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+    "tenacity>=8.0.0",
+    "chromadb>=0.4.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-chroma>=0.2.0",
+    "sentence-transformers>=2.7.0",
+    "transformers>=4.30.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "torch",
+    "torchvision",
+    "gradio>=4.29.0",
+    "fastmcp>=3.1.0",
+    "mcp>=1.25.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["connoisseur*"]

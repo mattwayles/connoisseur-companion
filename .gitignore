@@ -1,0 +1,53 @@
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.eggs/
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Data files (download via data/download.sh) ────────────────────────────────
+data/California-Culinary-Map.txt
+data/Recipes.json
+data/Synthetic-User-Reviews.json
+data/synthetic_recipe_images/
+data/*.zip
+
+# ── Generated pipeline outputs ────────────────────────────────────────────────
+data/structured_restaurant_data.json
+data/augmented_food_recipe.json
+data/augmented_user_review.json
+data/*.bak
+data/_review_image_tmp.jpg
+
+# ── Test artifacts ─────────────────────────────────────────────────────────────
+structured_restaurant_data_unit_test.json
+structured_restaurant_data_unit_test.json.bak
+
+# ── ChromaDB (persisted outside the repo at ~/chroma_connoisseur) ─────────────
+chroma_connoisseur/
